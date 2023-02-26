@@ -1,15 +1,20 @@
 {
   "name": "dawidgardzinski",
   "private": true,
+  "homepage": "https://dawidgardzinski.github.io/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "pnpm build && gh-pages -d dist -b build"
   },
   "devDependencies": {
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
