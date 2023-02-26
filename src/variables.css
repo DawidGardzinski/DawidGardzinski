@@ -1,6 +1,21 @@
 :root{
-  --primary-color: #0080ff;
-  --black: #000000;
-  --white: #ffffff;
-  --secondary-color: #002040;
+  /* COLORS */
+  --color-primary: #0080ff;
+  --color-tertiary: #0073E6;
+  --color-secondary: #002040;
+  --color-border: #1484D3;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* FONTS */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-size-xxl: 64px;
+  --font-size-xl: 40px;
+  --font-size-m: 20px;
+
+  /* BORDER */
+  --border-radius-circle: 50%;
+  --border-radius-rounded: 15px;
+  /* SPACES */
 }
