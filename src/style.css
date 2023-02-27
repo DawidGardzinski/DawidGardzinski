@@ -2,7 +2,6 @@ body{
   background-color: var(--color-secondary);
   color: var(--color-white);
   font-family: 'Inter', sans-serif;
-  padding: 16px;
   overflow-x: hidden;
 }
 
@@ -18,12 +17,10 @@ body{
 }
 
 .main{
-  width: 1200px;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
 }
 
 .grid{
@@ -36,6 +33,9 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  width: 100vw;
+  padding: 16px;
 }
 
 .logo{
@@ -67,7 +67,7 @@ body{
 }
 
 .start{
-  min-height: 100%;
+  min-height: 100vh;
   grid-template-rows: 1fr 1fr;
   align-items: end;
 }
@@ -246,4 +246,13 @@ body{
 
 .project--third{
   grid-column: 9/13;
+}
+
+.footer{
+  margin-top: 50px;
+  border-top: solid 2px var(--color-white);
+  background-color: var(--color-black);
+  width: 100vw;
+  text-align: center;
+  padding: 20px 0;
 }
