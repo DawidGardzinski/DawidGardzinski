@@ -211,3 +211,39 @@ body{
   grid-column: 2/12;
   grid-row: 2/3;
 }
+
+.projects{
+  grid-template-rows: auto auto;
+  padding-bottom: 40px;
+}
+
+.projects__header{
+  grid-column: 4/10;
+  border-top: solid 4px var(--color-quinary);
+  border-bottom: solid 4px var(--color-quinary);
+  text-align: center;
+  margin: 0;
+  padding: 8px 0;
+  font-weight: var(--font-weight-normal);
+  margin-bottom: 40px;
+}
+
+.project{
+  grid-row: 2/3;
+  background-color: var(--color-quaternary);
+  border-radius: var(--border-radius-rounded);
+  height: 200px;
+}
+
+/* MAKE THIS MORE GENERIC */
+.project--first{
+  grid-column: 1/5;
+}
+
+.project--second{
+  grid-column: 5/9;
+}
+
+.project--third{
+  grid-column: 9/13;
+}
