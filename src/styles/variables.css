@@ -22,4 +22,17 @@
   --border-radius-circle: 50%;
   --border-radius-rounded: 15px;
   /* SPACES */
+
+  /* SCREEN SIZES */
+  --screen-size--desktop: 1200px;
+}
+
+
+/* MOBILE VARS */
+@media (max-width: 850px) {
+  :root{
+  --font-size-xxl: 40px;
+  --font-size-xl: 30px;
+  --font-size-m: 20px;
+  }
 }

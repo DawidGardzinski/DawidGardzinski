@@ -1,0 +1,77 @@
+@media (max-width: 650px) {
+  .grid{
+    grid-template-columns: repeat(4, calc((100vw) / 6));
+    column-gap: 20px;
+  }
+
+  .contact{
+    display: none;
+  }
+
+  .start__h1{
+    grid-column: 2/4;
+  }
+
+  .start__next-section-wrapper{
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
+  /* .about{ */
+  /* } */
+
+  .about__header{
+    grid-column: 1/5;
+  }
+
+  .about__text{
+    grid-column: 1/5;
+  }
+
+  .about__logo{
+    display: none;
+  }
+
+  .experience-and-education{
+    grid-template-rows: auto auto auto;
+    height: 100%;
+  }
+
+  .experience{
+    grid-column: 1/5;
+  }
+
+  .education{
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+
+  .certs{
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+
+  .projects{
+    grid-template-rows: auto auto auto;
+  }
+
+  .projects__header{
+    grid-column: 1/5;
+  }
+
+  /* MAKE THIS MORE GENERIC */
+  .project--first{
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+
+  .project--second{
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+
+  .project--third{
+    display: none;
+  }
+
+}
