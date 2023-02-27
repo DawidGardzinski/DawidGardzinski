@@ -1,15 +1,18 @@
 :root{
   /* COLORS */
+  /* TODO: this naming is terrible, refactor that */
   --color-primary: #0080ff;
   --color-secondary: #002040;
   --color-tertiary: #0073E6;
   --color-quaternary: #004080;
+  --color-quinary: #0060BF;
   --color-border: #1484D3;
   --color-black: #000000;
   --color-white: #ffffff;
 
   /* FONTS */
   --font-weight-normal: 400;
+  --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
   --font-size-xxl: 64px;
   --font-size-xl: 40px;
