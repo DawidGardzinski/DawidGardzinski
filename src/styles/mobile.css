@@ -8,6 +8,10 @@
     display: none;
   }
 
+  .logo__text{
+    display: none;
+  }
+
   .start__h1{
     grid-column: 2/4;
   }
