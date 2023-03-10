@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-566a471a.js"></script>
-    <link rel="stylesheet" href="/assets/index-44905387.css">
+    <script type="module" crossorigin src="/assets/index-185b5105.js"></script>
+    <link rel="stylesheet" href="/assets/index-3545c55b.css">
   </head>
   <body>
     <header class="header">
@@ -29,6 +29,21 @@
         <img class="icon icon--xl" src="/assets/github-d5150b8c.svg" alt="github">
         <img class="icon icon--xl" src="/assets/linkedin-094e3cc2.svg" alt="linkedin">
       </nav>
+      <nav class="mobile-nav">
+        <input id="hamburgerCheckbox" class="hamburger-checkbox" type="checkbox" ></input>
+        <label tabindex="0" role="button" class="hamburger" for="hamburgerCheckbox">
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <ul id="mobile-nav-list" class="mobile-nav-list">
+            <li><a class="mobile-nav-list__item" href="#about">About me</a></li>
+            <li><a class="mobile-nav-list__item" href="#experience-and-education">Experience</a></li>
+            <li><a class="mobile-nav-list__item" href="#experience-and-education">Educations</a></li>
+          </ul>
+        </label>
+
+
+      </nav>
     </header>
 
     <main class="main">
@@ -41,7 +56,7 @@
         </div>
       </section>
 
-      <section class="about grid">
+      <section id="about" class="about grid">
         <h2 class="about__header">About me</h2>
         <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ipsum sapien, eu imperdiet tortor sagittis quis. Quisque posuere commodo lectus, quis sagittis dolor rhoncus tempor. Mauris fringilla turpis ut sodales laoreet. Donec et orci aliquet, laoreet urna non, rutrum libero. Mauris quis tristique felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed tortor nibh. Donec id ligula eget libero scelerisque imperdiet non vel est. Nam vulputate quam ut maximus pretium. Praesent vestibulum nec orci auctor malesuada</p>
         <div class="about__logo">
@@ -49,7 +64,7 @@
         </div>
       </section>
 
-      <section class="experience-and-education grid">
+      <section id="experience-and-education" class="experience-and-education grid">
         <div class="experience">
           <h3 class="experience-and-education__header">Experience</h3>
           <ul class="experience-and-education__list">
