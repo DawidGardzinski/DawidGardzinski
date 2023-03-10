@@ -36,10 +36,14 @@ body{
   position: absolute;
   width: 100vw;
   padding: 16px;
+  position: fixed;
+  backdrop-filter: blur(1px);
+  z-index: 1;
 }
 
 .logo{
   display: flex;
+  z-index: 1;
 }
 
 .logo__text{
@@ -67,6 +71,74 @@ body{
   display: flex;
   gap: 32px;
   margin-right: 16px;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+.hamburger{
+  width: 40px;
+  height: 40px;
+  flex-direction: column;
+  margin-right: 16px;
+  justify-content: space-around;
+  cursor: pointer;
+  display: flex;
+}
+
+.hamburger-checkbox{
+  display: none;
+}
+
+.hamburger__line{
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-white);
+  transition: transform .3s ease, scale .3s ease;
+  z-index: 1;
+}
+
+.hamburger-checkbox:checked ~ .hamburger > .hamburger__line:first-child{
+  transform: translateY(13px) rotate(45deg) ;
+}
+
+.hamburger-checkbox:checked ~ .hamburger > .hamburger__line:nth-child(2){
+  scale: 0;
+}
+
+.hamburger-checkbox:checked ~ .hamburger > .hamburger__line:nth-child(3){
+  transform:  translateY(-13px) rotate(-45deg);
+}
+
+.mobile-nav-list{
+  position: fixed;
+  width: 100vw;
+  min-height: 130px;
+  left: 0;
+  top: 0;
+  margin: 0;
+  list-style: none;
+  padding: 16px;
+  background-color: var(--color-black);
+  transform: translateY(-100%);
+  transition: transform .5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.mobile-nav-list__item{
+  display: block;
+  padding: 15px 50px;
+  text-decoration: none;
+  color: var(--color-white);
+  border-bottom: solid 1px var(--color-white);
+}
+
+.hamburger-checkbox:checked ~ .hamburger > .mobile-nav-list{
+  transform: translateY(0%);
 }
 
 .start{
@@ -103,9 +175,18 @@ body{
   margin-bottom: 16px;
 }
 
+.background-gradient{
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(0deg, var(--color-black) 0%, var(--color-secondary) 100%);
+}
+
+.background-gradient--180deg{
+  background: linear-gradient(180deg, var(--color-black) 0%, var(--color-secondary) 100%);
+}
+
 .about{
   padding: 150px 0;
-  margin: 50px 0;
   position: relative;
 }
 

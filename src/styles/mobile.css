@@ -8,6 +8,10 @@
     display: none;
   }
 
+  .mobile-nav{
+    display: block;
+  }
+
   .logo__text{
     display: none;
   }
