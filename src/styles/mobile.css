@@ -13,9 +13,9 @@
   }
 
   .nav-list{
+    left: 0;
     transform: translateY(-100%);
     align-items: center;
-    left: 0;
     width: 100vw;
     height: fit-content;
   }
@@ -37,9 +37,6 @@
     grid-column: 2/4;
     grid-row: 2/3;
   }
-
-  /* .about{ */
-  /* } */
 
   .about__header{
     grid-column: 1/5;
@@ -93,6 +90,16 @@
 
   .project--third{
     display: none;
+  }
+  /* -------------------- */
+
+  .faq{
+    grid-column: 1/5;
+  }
+
+  .signature{
+    grid-row: 2/3;
+    grid-column: 1/5;
   }
 
 }

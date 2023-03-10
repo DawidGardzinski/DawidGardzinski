@@ -65,4 +65,12 @@
     display: none;
   }
 
+  .faq{
+    grid-column: 2/8;
+  }
+
+  .signature{
+    grid-row: 2/3;
+    grid-column: 1/9;
+  }
 }
