@@ -4,6 +4,15 @@
     column-gap: 20px;
   }
 
+  .nav-list{
+    width: 250px;
+  }
+
+  .nav-list__item{
+    padding: 15px 30px;
+    width: 150px;
+  }
+
   .start__h1{
     grid-column: 4/6;
   }

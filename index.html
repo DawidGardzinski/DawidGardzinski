@@ -26,18 +26,21 @@
         </div>
       </div>
       <nav class="contact">
-        <img class="icon" src="/src/icons/github.svg" alt="github">
-        <img class="icon" src="/src/icons/linkedin.svg" alt="linkedin">
-        <div class="mobile-nav">
+        <img class="icon icon--hide-on-mobile" src="/src/icons/github.svg" alt="github">
+        <img class="icon icon--hide-on-mobile" src="/src/icons/linkedin.svg" alt="linkedin">
+        <div class="nav">
           <input id="hamburgerCheckbox" class="hamburger-checkbox" type="checkbox" ></input>
           <label tabindex="0" role="button" class="hamburger" for="hamburgerCheckbox">
             <div class="hamburger__line"></div>
             <div class="hamburger__line"></div>
             <div class="hamburger__line"></div>
-            <ul id="mobile-nav-list" class="mobile-nav-list">
-              <li><a class="mobile-nav-list__item" href="#about">About me</a></li>
-              <li><a class="mobile-nav-list__item" href="#experience-and-education">Experience</a></li>
-              <li><a class="mobile-nav-list__item" href="#experience-and-education">Educations</a></li>
+            <ul id="nav-list" class="nav-list">
+              <li><a class="nav-list__item" href="#about">About me</a></li>
+              <li><a class="nav-list__item" href="#experience-and-education">Experience</a></li>
+              <li><a class="nav-list__item" href="#experience-and-education">Educations</a></li>
+              <li><a class="nav-list__item" href="#projects">Projects</a></li>
+              <li class="nav-list__item nav-list__socials"><img class="icon" src="/src/icons/github.svg" alt="github">
+                <img class="icon" src="/src/icons/linkedin.svg" alt="linkedin"></li>
             </ul>
           </label>
         </div>
@@ -106,7 +109,7 @@
         </div>
       </section>
 
-      <section class="projects grid">
+      <section id="projects" class="projects grid">
         <h2 class="projects__header">
           Projects
         </h2>

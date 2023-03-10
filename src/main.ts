@@ -10,9 +10,9 @@ const checkboxHamburgerElement = document.getElementById(
   "hamburgerCheckbox"
 ) as HTMLInputElement | null;
 
-const mobileMenu = document.getElementById("mobile-nav-list");
+const mobileMenu = document.getElementById("nav-list");
 
-document.querySelectorAll(".mobile-nav-list__item").forEach((element) => {
+document.querySelectorAll(".nav-list__item").forEach((element) => {
   element.addEventListener("click", () => {
     uncheckHamburgerCheckboxOnMenuItemClick(checkboxHamburgerElement);
   });

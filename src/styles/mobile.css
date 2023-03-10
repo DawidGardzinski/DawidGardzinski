@@ -8,6 +8,27 @@
     display: none;
   }
 
+  .icon--hide-on-mobile{
+    display: none;
+  }
+
+  .nav-list{
+    transform: translateY(-100%);
+    align-items: center;
+    left: 0;
+    width: 100vw;
+    height: fit-content;
+  }
+
+  .nav-list__item{
+    width: 200px;
+    text-align: auto;
+  }
+
+  .hamburger-checkbox:checked ~ .hamburger > .nav-list{
+    transform: translateY(0%);
+  }
+
   .start__h1{
     grid-column: 2/4;
   }
