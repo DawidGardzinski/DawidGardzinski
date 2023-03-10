@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Web developer portfolio">
+    <meta name="keywords" content="web, development, programmer, developer, backend, frontend">
+    <meta name="author" content="Dawid Gardziński">
   </head>
   <body>
     <header class="header">
@@ -23,24 +26,21 @@
         </div>
       </div>
       <nav class="contact">
-        <img class="icon icon--xl" src="/src/icons/mail.svg" alt="mail">
-        <img class="icon icon--xl" src="/src/icons/github.svg" alt="github">
-        <img class="icon icon--xl" src="/src/icons/linkedin.svg" alt="linkedin">
-      </nav>
-      <nav class="mobile-nav">
-        <input id="hamburgerCheckbox" class="hamburger-checkbox" type="checkbox" ></input>
-        <label tabindex="0" role="button" class="hamburger" for="hamburgerCheckbox">
-          <div class="hamburger__line"></div>
-          <div class="hamburger__line"></div>
-          <div class="hamburger__line"></div>
-          <ul id="mobile-nav-list" class="mobile-nav-list">
-            <li><a class="mobile-nav-list__item" href="#about">About me</a></li>
-            <li><a class="mobile-nav-list__item" href="#experience-and-education">Experience</a></li>
-            <li><a class="mobile-nav-list__item" href="#experience-and-education">Educations</a></li>
-          </ul>
-        </label>
-
-
+        <img class="icon" src="/src/icons/github.svg" alt="github">
+        <img class="icon" src="/src/icons/linkedin.svg" alt="linkedin">
+        <div class="mobile-nav">
+          <input id="hamburgerCheckbox" class="hamburger-checkbox" type="checkbox" ></input>
+          <label tabindex="0" role="button" class="hamburger" for="hamburgerCheckbox">
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+            <ul id="mobile-nav-list" class="mobile-nav-list">
+              <li><a class="mobile-nav-list__item" href="#about">About me</a></li>
+              <li><a class="mobile-nav-list__item" href="#experience-and-education">Experience</a></li>
+              <li><a class="mobile-nav-list__item" href="#experience-and-education">Educations</a></li>
+            </ul>
+          </label>
+        </div>
       </nav>
     </header>
 
@@ -58,7 +58,7 @@
         <h2 class="about__header">About me</h2>
         <p class="about__text">I am a web developer who specializes in creating web applications. I have skills in both frontend design and development (HTML, CSS, TypeScript) as well as backend development (Node.js, PostgreSQL, MongoDB, Golang), allowing me to create comprehensive solutions for clients. I always prioritize the efficiency, usability, and scalability of projects, as well as constantly improving my skills. I have over 3 years of professional experience in programming and over 8 years of non-professional. </p>
         <div class="about__logo">
-          <img class="about__image" src="src/images/logo-big.svg" />
+          <img class="about__image" src="src/images/logo-big.svg" alt="logo" />
         </div>
       </section>
       <div class="background-gradient background-gradient--180deg"></div>
