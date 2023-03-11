@@ -71,6 +71,10 @@ body{
   color: var(--color-tertiary);
 }
 
+.text--color-primary{
+  color: var(--color-primary);
+}
+
 .contact{
   display: flex;
   gap: 20px;
@@ -291,7 +295,7 @@ body{
 }
 
 .experience-and-education__item-date, .experience-and-education__item-issuer{
-  color: var(--color-primary);
+  color: var(--color-tertiary);
   font-weight: var(--font-weight-normal);
   margin-top: 4px;
   font-size: 12px;
