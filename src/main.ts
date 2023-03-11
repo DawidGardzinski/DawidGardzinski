@@ -6,6 +6,9 @@ import "./styles/mobile.css";
 import "./styles/utils.css";
 import { clickOutsideCallback } from "./scripts/clickOutsideCallback";
 import { setCheckboxState } from "./scripts/setCheckboxState";
+import { typewriter } from "./scripts/typewriter";
+
+const isMobile = window.innerWidth < 650;
 
 document.querySelectorAll(".js-disabled").forEach((element) => {
   element.classList.remove("js-disabled");
@@ -20,6 +23,8 @@ const checkboxHamburgerLabelElement = document.getElementById(
 );
 
 const mobileMenu = document.getElementById("nav-list");
+
+const typewriterElement = document.getElementById("typewriter");
 
 document.querySelectorAll(".nav-list__item").forEach((element) => {
   element.addEventListener("click", () => {
@@ -48,3 +53,9 @@ startButton?.addEventListener("click", () => {
   if (!aboutMeSection) return;
   aboutMeSection.scrollIntoView();
 });
+
+if (isMobile) {
+  typewriter(typewriterElement, ["Hi", ":)"]);
+} else {
+  typewriter(typewriterElement, ["Hi", "I am Dawid", "Web developer", ":)"]);
+}
