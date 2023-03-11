@@ -9,7 +9,7 @@ export const clickOutsideCallback = (
   callback: () => void
 ) => {
   if (!element) return;
-  document.addEventListener("click", (event) => {
+  document.addEventListener("mousedown", (event) => {
     assertIsNode(event.target);
     const isClickInside = element.contains(event.target);
 

@@ -18,10 +18,6 @@ document.querySelectorAll(".nav-list__item").forEach((element) => {
   });
 });
 
-checkboxHamburgerElement?.addEventListener("click", (event) => {
-  event.stopImmediatePropagation();
-});
-
 clickOutsideCallback(mobileMenu, () => {
   uncheckHamburgerCheckboxOnMenuItemClick(checkboxHamburgerElement);
 });
