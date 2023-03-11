@@ -27,7 +27,7 @@ document.querySelectorAll(".nav-list__item").forEach((element) => {
   });
 });
 
-clickOutsideCallback(mobileMenu, () => {
+clickOutsideCallback([mobileMenu, checkboxHamburgerLabelElement], () => {
   setCheckboxState(checkboxHamburgerElement, false);
 });
 

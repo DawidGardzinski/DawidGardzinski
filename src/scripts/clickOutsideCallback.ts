@@ -5,13 +5,17 @@ function assertIsNode(e: EventTarget | null): asserts e is Node {
 }
 
 export const clickOutsideCallback = (
-  element: HTMLElement | null,
+  elements: (HTMLElement | null)[],
   callback: () => void
 ) => {
-  if (!element) return;
+  const existedElements = elements.filter((element) =>
+    Boolean(element)
+  ) as HTMLElement[];
   document.addEventListener("mousedown", (event) => {
-    assertIsNode(event.target);
-    const isClickInside = element.contains(event.target);
+    const isClickInside = existedElements.some((element) => {
+      assertIsNode(event.target);
+      return element.contains(event.target);
+    });
 
     if (!isClickInside) {
       callback();

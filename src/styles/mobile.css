@@ -25,7 +25,7 @@
     text-align: auto;
   }
 
-  .hamburger-checkbox:checked ~ .hamburger > .nav-list{
+  .hamburger-checkbox:checked ~  .nav-list{
     transform: translateY(0%);
   }
 
