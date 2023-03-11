@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Dawid Gardziński</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,13 +11,13 @@
     <meta name="description" content="Web developer portfolio">
     <meta name="keywords" content="web, development, programmer, developer, backend, frontend">
     <meta name="author" content="Dawid Gardziński">
-    <script type="module" crossorigin src="/assets/index-70ad59d1.js"></script>
-    <link rel="stylesheet" href="/assets/index-3bca5110.css">
+    <script type="module" crossorigin src="/assets/index-d5ad618d.js"></script>
+    <link rel="stylesheet" href="/assets/index-c23d041f.css">
   </head>
   <body>
     <header class="header">
       <div class="logo">
-        <img src="/assets/logo-96e08a6c.svg" alt="logo">
+        <img width="66" height="69" src="/assets/logo-96e08a6c.svg" alt="logo">
         <div class="logo__text">
           <div class="text text--xl">
             Dawid Gardziński
@@ -28,24 +28,34 @@
         </div>
       </div>
       <nav class="contact">
-        <img class="icon icon--hide-on-mobile" src="/assets/github-d5150b8c.svg" alt="github">
-        <img class="icon icon--hide-on-mobile" src="/assets/linkedin-094e3cc2.svg" alt="linkedin">
+        <a href="https://github.com/DawidGardzinski" target="_blank">
+          <img class="icon icon--hide-on-mobile" src="/assets/github-d5150b8c.svg" alt="github">
+        </a>
+        <a href="https://www.linkedin.com/in/dawid-gardzi%C5%84ski-649978174/" target="_blank">
+          <img class="icon icon--hide-on-mobile" src="/assets/linkedin-094e3cc2.svg" alt="linkedin">
+        </a>
         <div class="nav">
-          <input id="hamburgerCheckbox" class="hamburger-checkbox" type="checkbox" ></input>
-          <label tabindex="0" role="button" class="hamburger" for="hamburgerCheckbox">
-            <div class="hamburger__line"></div>
-            <div class="hamburger__line"></div>
-            <div class="hamburger__line"></div>
-            <ul id="nav-list" class="nav-list">
-              <li><a class="nav-list__item" href="#about">About me</a></li>
-              <li><a class="nav-list__item" href="#experience-and-education">Experience</a></li>
-              <li><a class="nav-list__item" href="#experience-and-education">Educations</a></li>
-              <li><a class="nav-list__item" href="#projects">Projects</a></li>
-              <li><a class="nav-list__item" href="#faq">FAQ</a></li>
-              <li class="nav-list__item nav-list__socials"><img class="icon" src="/assets/github-d5150b8c.svg" alt="github">
-                <img class="icon" src="/assets/linkedin-094e3cc2.svg" alt="linkedin"></li>
-            </ul>
+          <input id="hamburgerCheckbox" class="hamburger-checkbox" type="checkbox" >
+          <label tabindex="0" class="hamburger" for="hamburgerCheckbox" id="hamburgerCheckboxLabel">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
           </label>
+          <ul id="nav-list" class="nav-list">
+            <li><a class="nav-list__item" href="#about">About me</a></li>
+            <li><a class="nav-list__item" href="#experience-and-education">Experience</a></li>
+            <li><a class="nav-list__item" href="#experience-and-education">Educations</a></li>
+            <li><a class="nav-list__item" href="#projects">Projects</a></li>
+            <li><a class="nav-list__item" href="#faq">FAQ</a></li>
+            <li class="nav-list__item nav-list__socials">
+              <a href="https://github.com/DawidGardzinski" target="_blank" >
+                <img class="icon" src="/assets/github-d5150b8c.svg" alt="github">
+              </a>
+              <a href="https://www.linkedin.com/in/dawid-gardzi%C5%84ski-649978174/" target="_blank">
+                <img class="icon" src="/assets/linkedin-094e3cc2.svg" alt="linkedin">
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -64,7 +74,7 @@
         <h2 class="about__header">About me</h2>
         <p class="about__text">I am a web developer who specializes in creating web applications. I have skills in both frontend design and development (HTML, CSS, TypeScript) as well as backend development (Node.js, PostgreSQL, MongoDB, Golang), allowing me to create comprehensive solutions for clients. I always prioritize the efficiency, usability, and scalability of projects, as well as constantly improving my skills. I have over 3 years of professional experience in programming and over 8 years of non-professional. </p>
         <div class="about__logo">
-          <img class="about__image" width="300px" height="300px" src="/assets/logo-big-37fe4f1a.svg" alt="logo" />
+          <img class="about__image" width="300" height="300" src="/assets/logo-big-37fe4f1a.svg" alt="logo" >
         </div>
       </section>
       <div class="background-gradient background-gradient--180deg"></div>
@@ -124,36 +134,37 @@
     <div class="background-gradient"></div>
     <footer class="footer grid">
       <section id="faq" class="faq">
+        <h2 class="faq__header">FAQ</h2>
         <ul class="faq-list">
-          <li>
-            <input id="question1" class="faq-checkbox" type="checkbox" ></input>
-            <label for="question1" class="faq__QNA"><h4 class="faq__question">Question 1</h4>
-              <p class="faq__answer">sadfasdfasdfasfs shafjkhaso kdjfoasj fiasdof asdfajsklsdfasfs shafjkhaso kdjfoasj fiasdof asdfajsklsdfasfs shafjkhaso kdjfoasj fiasdof asdfajsklsdfasfs shafjkhaso kdjfoasj fiasdof asdfajsklsdfasfs shafjkhaso kdjfoasj fiasdof asdfajsklfjnalsjdfjlkas jflkjasdlkjfkl jasdljias j</p>
+          <li class="faq-list__item">
+            <input id="question1" class="faq-checkbox" type="checkbox" >
+            <label for="question1" class="faq__question">Question 1
             </label>
+            <p class="faq__answer">sadfasdfasdfasfs shafjkhaso kdjfoasj fiasdof asdfajsklsdfasfs shafjkhaso kdjfoasj fiasdof asdfajsklsdfasfs shafjkhaso kdjfoasj fiasdof asdfajsklsdfasfs shafjkhaso kdjfoasj fiasdof asdfajsklsdfasfs shafjkhaso kdjfoasj fiasdof asdfajsklfjnalsjdfjlkas jflkjasdlkjfkl jasdljias j</p>
           </li>
-          <li>
-            <input id="question2" class="faq-checkbox" type="checkbox" ></input>
-            <label for="question2" class="faq__QNA">
-              <h4 class="faq__question">Question 2</h4>
-              <p class="faq__answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laborum quas, ullam possimus assumenda, laboriosam error odit natus reiciendis recusandae consectetur veritatis officiis soluta cum in maxime? Minus, obcaecati quisquam.
-              Nostrum qui dolore odio eum. Consequuntur quasi quia dolore sunt saepe provident aspernatur iste dicta pariatur, cupiditate obcaecati magni exercitationem quos nulla at corporis repellendus molestias temporibus, ipsum fuga et!
-              Labore, id aliquam! Repellendus illum accusantium nostrum veritatis ipsam, totam officia, maiores fugit, est magnam culpa exercitationem magni animi consequuntur labore tempore in nihil a soluta laborum harum aspernatur possimus?
-              Hic dicta error aliquam nisi eius earum, dolor nihil aperiam explicabo corporis. Ut nesciunt harum inventore labore blanditiis esse tempore, libero aliquam est sequi odio rerum nihil, totam sint sunt!
-              Amet molestias, reiciendis, aspernatur ut nihil inventore repudiandae dicta minima nostrum eligendi labore rerum doloribus blanditiis accusamus sit. Commodi officiis consequatur illo voluptatibus corporis nemo velit excepturi recusandae sapiente deleniti?</p>
+          <li class="faq-list__item">
+            <input id="question2" class="faq-checkbox" type="checkbox" >
+            <label for="question2" class="faq__question">
+              Question 2
             </label>
+            <p class="faq__answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laborum quas, ullam possimus assumenda, laboriosam error odit natus reiciendis recusandae consectetur veritatis officiis soluta cum in maxime? Minus, obcaecati quisquam.
+            Nostrum qui dolore odio eum. Consequuntur quasi quia dolore sunt saepe provident aspernatur iste dicta pariatur, cupiditate obcaecati magni exercitationem quos nulla at corporis repellendus molestias temporibus, ipsum fuga et!
+            Labore, id aliquam! Repellendus illum accusantium nostrum veritatis ipsam, totam officia, maiores fugit, est magnam culpa exercitationem magni animi consequuntur labore tempore in nihil a soluta laborum harum aspernatur possimus?
+            Hic dicta error aliquam nisi eius earum, dolor nihil aperiam explicabo corporis. Ut nesciunt harum inventore labore blanditiis esse tempore, libero aliquam est sequi odio rerum nihil, totam sint sunt!
+            Amet molestias, reiciendis, aspernatur ut nihil inventore repudiandae dicta minima nostrum eligendi labore rerum doloribus blanditiis accusamus sit. Commodi officiis consequatur illo voluptatibus corporis nemo velit excepturi recusandae sapiente deleniti?</p>
           </li>
-          <li>
-            <input id="question3" class="faq-checkbox" type="checkbox" ></input>
-            <label for="question3" class="faq__QNA"><h4 class="faq__question">Question 3</h4>
-              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptate est velit, nam sunt id officia temporibus, iste magnam adipisci voluptatibus doloremque eligendi eius hic aspernatur quae fugit, atque cumque?</p>
+          <li class="faq-list__item">
+            <input id="question3" class="faq-checkbox" type="checkbox" >
+            <label for="question3" class="faq__question">Question 3
             </label>
+            <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptate est velit, nam sunt id officia temporibus, iste magnam adipisci voluptatibus doloremque eligendi eius hic aspernatur quae fugit, atque cumque?</p>
           </li>
-          <li>
-            <input id="question4" class="faq-checkbox" type="checkbox" ></input>
-            <label for="question4" class="faq__QNA"><h4 class="faq__question">Question 4</h4>
-              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit optio molestiae aperiam nulla voluptatum tenetur veniam nemo assumenda, possimus accusantium excepturi dolor adipisci iure vitae ipsa commodi voluptatibus officia impedit?
-              Numquam, architecto. Fugit ipsa, sint deleniti qui maiores cum, unde eligendi illum eius, dolores assumenda adipisci officia! Amet saepe, enim itaque et in architecto non autem, dolores tempora, veniam dicta!</p>
+          <li class="faq-list__item">
+            <input id="question4" class="faq-checkbox" type="checkbox" >
+            <label for="question4" class="faq__question">Question 4
             </label>
+            <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit optio molestiae aperiam nulla voluptatum tenetur veniam nemo assumenda, possimus accusantium excepturi dolor adipisci iure vitae ipsa commodi voluptatibus officia impedit?
+            Numquam, architecto. Fugit ipsa, sint deleniti qui maiores cum, unde eligendi illum eius, dolores assumenda adipisci officia! Amet saepe, enim itaque et in architecto non autem, dolores tempora, veniam dicta!</p>
           </li>
         </ul>
       </section>
