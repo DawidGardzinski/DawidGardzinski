@@ -4,9 +4,11 @@ import "./styles/style.css";
 import "./styles/tablet.css";
 import "./styles/mobile.css";
 import "./styles/utils.css";
+import "./styles/parallax.css";
 import { clickOutsideCallback } from "./scripts/clickOutsideCallback";
 import { setCheckboxState } from "./scripts/setCheckboxState";
 import { typewriter } from "./scripts/typewriter";
+import { setIsScrollSyncPaused } from "./scripts/synchronizeScroll";
 
 const isMobile = window.innerWidth < 650;
 
@@ -17,20 +19,11 @@ document.querySelectorAll(".js-disabled").forEach((element) => {
 const checkboxHamburgerElement = document.getElementById(
   "hamburgerCheckbox"
 ) as HTMLInputElement | null;
-
 const checkboxHamburgerLabelElement = document.getElementById(
   "hamburgerCheckboxLabel"
 );
-
 const menu = document.getElementById("nav-list");
-
 const typewriterElement = document.getElementById("typewriter");
-
-document.querySelectorAll(".nav-list__item").forEach((element) => {
-  element.addEventListener("click", () => {
-    setCheckboxState(checkboxHamburgerElement, false);
-  });
-});
 
 clickOutsideCallback([menu, checkboxHamburgerLabelElement], () => {
   setCheckboxState(checkboxHamburgerElement, false);
@@ -51,6 +44,7 @@ const aboutMeSection = document.getElementById("about");
 
 startButton?.addEventListener("click", () => {
   if (!aboutMeSection) return;
+  setIsScrollSyncPaused(true);
   aboutMeSection.scrollIntoView();
 });
 
@@ -59,3 +53,10 @@ if (isMobile) {
 } else {
   typewriter(typewriterElement, ["Hi", "I am Dawid", "Web developer", ":)"]);
 }
+
+document.querySelectorAll(".nav-list__item").forEach((element) => {
+  element.addEventListener("click", () => {
+    setCheckboxState(checkboxHamburgerElement, false);
+    setIsScrollSyncPaused(true);
+  });
+});

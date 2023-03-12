@@ -12,7 +12,7 @@
     <meta name="keywords" content="web, development, programmer, developer, backend, frontend">
     <meta name="author" content="Dawid Gardziński">
   </head>
-  <body>
+  <body id="body">
     <header class="header">
       <div class="logo">
         <img width="66" height="69" src="/src/icons/logo.svg" alt="logo">
@@ -67,6 +67,17 @@
           </button>
         </div>
       </section>
+      <div id="parallax" class="parallax">
+        <div class="parallax__layer parallax__layer--first">
+          <div class="parallax__layer-first-circle"></div>
+        </div>
+        <div class="parallax__layer parallax__layer--second">
+          <div class="parallax__layer-second-circle"></div>
+        </div>
+        <div class="parallax__layer parallax__layer--third">
+          <div class="parallax__layer-third-circle"></div>
+        </div>
+      </div>
       <div class="background-gradient"></div>
       <section id="about" class="about grid">
         <h2 class="about__header">About me</h2>
@@ -172,5 +183,6 @@
     </footer>
 
     <script type="module" src="/src/main.ts" defer></script>
+    <script type="module" src="/src/parallax.ts" defer></script>
   </body>
 </html>
