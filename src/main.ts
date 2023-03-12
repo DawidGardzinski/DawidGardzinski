@@ -22,7 +22,7 @@ const checkboxHamburgerLabelElement = document.getElementById(
   "hamburgerCheckboxLabel"
 );
 
-const mobileMenu = document.getElementById("nav-list");
+const menu = document.getElementById("nav-list");
 
 const typewriterElement = document.getElementById("typewriter");
 
@@ -32,7 +32,7 @@ document.querySelectorAll(".nav-list__item").forEach((element) => {
   });
 });
 
-clickOutsideCallback([mobileMenu, checkboxHamburgerLabelElement], () => {
+clickOutsideCallback([menu, checkboxHamburgerLabelElement], () => {
   setCheckboxState(checkboxHamburgerElement, false);
 });
 
