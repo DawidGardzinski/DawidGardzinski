@@ -398,6 +398,7 @@ body{
 .faq__question{
   position: relative;
   font-weight: var(--font-weight-bold);
+  letter-spacing: 1px;
   display: block;
   cursor: pointer;
   padding: 12px;
@@ -422,12 +423,13 @@ body{
   margin: 0;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   transition: max-height .4s ease, clip-path .3s ease, padding-bottom .3s ease;
-  padding:  0 12px;
+  line-height: 1.5;
+  padding: 0 20px;
 }
 
 .faq-checkbox:checked ~ .faq__answer{
   max-height: 1000px;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 

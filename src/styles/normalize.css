@@ -79,6 +79,11 @@ pre {
 
 a {
   background-color: transparent;
+  color: var(--color-tertiary);
+}
+
+a:visited{
+  color: var(--color-primary);
 }
 
 /**
