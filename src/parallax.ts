@@ -1,8 +1,10 @@
+import shuffle from "lodash/shuffle";
 import { elementObserver } from "./scripts/observer";
 import {
   setIsScrollSyncPaused,
   synchronizeScroll,
 } from "./scripts/synchronizeScroll";
+import { getRandIntBetween } from "./utils/getRandIntBetween";
 import { onScrollEnd } from "./utils/onScrollEnd";
 
 // PARALLAX
@@ -28,4 +30,60 @@ elementObserver(parallaxElement, (entries) => {
   } else {
     setIsScrollSyncPaused(true);
   }
+});
+
+const buzzWords = [
+  "typescript",
+  "react",
+  "javascript",
+  "redux",
+  "next",
+  "nx",
+  "bem",
+  "css",
+  "sass",
+  "html",
+  "styled components",
+  "vite",
+  "webpack",
+  "lodash",
+  "a11y",
+  "core web vitals",
+  "seo",
+  "frontend",
+  "backend",
+  "mysql",
+  "postgresql",
+  "node.js",
+  "mongodb",
+  "cloudflare",
+  "docker",
+  "owasp",
+  "git",
+  "github",
+  "gitlab",
+  "bitbucket",
+  "ci/cd",
+  "github actions",
+  "rwd",
+  "spa",
+  "ssr",
+  "ssg",
+];
+
+document.querySelectorAll(".parallax__layer").forEach((element) => {
+  const shuffledBuzzWords = shuffle(buzzWords);
+  const paralaxLayerItemWord = shuffledBuzzWords.map((word) => {
+    const newDiv = document.createElement("div");
+    const newContent = document.createTextNode(word);
+
+    newDiv.appendChild(newContent);
+    newDiv.classList.add("parallax__word");
+    newDiv.style.top = `${getRandIntBetween(0, 100)}%`;
+    newDiv.style.left = `${getRandIntBetween(0, 100)}%`;
+
+    return newDiv;
+  });
+
+  paralaxLayerItemWord.forEach((item) => element.appendChild(item));
 });

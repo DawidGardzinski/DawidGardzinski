@@ -14,45 +14,41 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 100vh 0;
+  padding: 100vh 20px;
+  width: 100%;
   display: flex;
   justify-content: left;
 }
 
 .parallax__layer > * {
-  height: 50px;
-  width: 50px;
   display: block;
 }
 
 .parallax__layer--first{
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  color: var(--color-tertiary);
 }
 
 .parallax__layer--second{
   -webkit-transform: translateZ(-2px) scale(3);
   transform: translateZ(-2px) scale(3);
+  color: var(--color-primary);
 }
 
 .parallax__layer--third{
   -webkit-transform: translateZ(-6px) scale(5);
   transform: translateZ(-6px) scale(5);
+  color: var(--color-quinary);
 }
 
-.parallax__layer-first-circle{
-  border-radius: 50%;
-  background-color: red;
-}
-
-.parallax__layer-second-circle{
-  border-radius: 50%;
-  background-color: #0000ff55;
+.parallax__layer--fourth{
+  -webkit-transform: translateZ(-10px) scale(6);
+  transform: translateZ(-10px) scale(6);
 
 }
 
-.parallax__layer-third-circle{
-  border-radius: 50%;
-  background-color: #00ff0055;
+.parallax__word{
+  position: absolute;
+  opacity: 60%;
 }
-
