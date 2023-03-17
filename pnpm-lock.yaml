@@ -4,12 +4,14 @@ specifiers:
   '@types/lodash': ^4.14.191
   gh-pages: ^5.0.0
   lodash: ^4.17.21
+  rollup-plugin-analyzer: ^4.0.0
   typescript: ^4.9.3
   vite: ^4.1.0
 
 dependencies:
   '@types/lodash': 4.14.191
   lodash: 4.17.21
+  rollup-plugin-analyzer: 4.0.0
 
 devDependencies:
   gh-pages: 5.0.0
@@ -543,6 +545,11 @@ packages:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
     dev: true
+
+  /rollup-plugin-analyzer/4.0.0:
+    resolution: {integrity: sha512-LL9GEt3bkXp6Wa19SNR5MWcvHNMvuTFYg+eYBZN2OIFhSWN+pEJUQXEKu5BsOeABob3x9PDaLKW7w5iOJnsESQ==}
+    engines: {node: '>=8.0.0'}
+    dev: false
 
   /rollup/3.17.3:
     resolution: {integrity: sha512-p5LaCXiiOL/wrOkj8djsIDFmyU9ysUxcyW+EKRLHb6TKldJzXpImjcRSR+vgo09DBdofGcOoLOsRyxxG2n5/qQ==}
