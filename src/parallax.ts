@@ -1,11 +1,12 @@
 import shuffle from "lodash/shuffle";
-import { elementObserver } from "./scripts/observer";
+import { elementObserver } from "./utils/observer";
 import {
   setIsScrollSyncPaused,
   synchronizeScroll,
 } from "./scripts/synchronizeScroll";
 import { getRandIntBetween } from "./utils/getRandIntBetween";
 import { onScrollEnd } from "./utils/onScrollEnd";
+import { getIsMobileSize } from "./utils/getIsMobileSize";
 
 // PARALLAX
 const parallaxElement = document.getElementById("parallax");
@@ -16,10 +17,10 @@ const parallaxElement = document.getElementById("parallax");
 if (window.location.hash) {
   //initial scroll
   onScrollEnd(window, () => {
-    synchronizeScroll(window, parallaxElement, 2);
+    synchronizeScroll(window, parallaxElement);
   });
 } else {
-  synchronizeScroll(window, parallaxElement, 2);
+  synchronizeScroll(window, parallaxElement);
 }
 
 //We have to to this that way, because on Chrome scrollSync interupt other scrolls
@@ -72,7 +73,10 @@ const buzzWords = [
 ];
 
 document.querySelectorAll(".parallax__layer").forEach((element) => {
-  const shuffledBuzzWords = shuffle(buzzWords);
+  const isMobile = getIsMobileSize();
+  const shuffledBuzzWords = isMobile
+    ? shuffle(buzzWords)
+    : shuffle([...buzzWords, ...buzzWords]);
   const paralaxLayerItemWord = shuffledBuzzWords.map((word) => {
     const newDiv = document.createElement("div");
     const newContent = document.createTextNode(word);

@@ -5,12 +5,13 @@ import "./styles/tablet.css";
 import "./styles/mobile.css";
 import "./styles/utils.css";
 import "./styles/parallax.css";
-import { clickOutsideCallback } from "./scripts/clickOutsideCallback";
+import { clickOutsideCallback } from "./utils/clickOutsideCallback";
 import { setCheckboxState } from "./scripts/setCheckboxState";
 import { typewriter } from "./scripts/typewriter";
 import { setIsScrollSyncPaused } from "./scripts/synchronizeScroll";
+import { getIsMobileSize } from "./utils/getIsMobileSize";
 
-const isMobile = window.innerWidth < 650;
+const isMobile = getIsMobileSize();
 
 document.querySelectorAll(".js-disabled").forEach((element) => {
   element.classList.remove("js-disabled");

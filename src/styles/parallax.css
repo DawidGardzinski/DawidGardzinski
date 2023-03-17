@@ -28,24 +28,27 @@
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   color: var(--color-tertiary);
+  font-size: 1em;
 }
 
 .parallax__layer--second{
   -webkit-transform: translateZ(-2px) scale(3);
   transform: translateZ(-2px) scale(3);
   color: var(--color-primary);
+  font-size: .9em;
 }
 
 .parallax__layer--third{
-  -webkit-transform: translateZ(-6px) scale(5);
-  transform: translateZ(-6px) scale(5);
+  -webkit-transform: translateZ(-6px) scale(8);
+  transform: translateZ(-6px) scale(8);
   color: var(--color-quinary);
+  font-size: .8em;
 }
 
 .parallax__layer--fourth{
-  -webkit-transform: translateZ(-10px) scale(6);
-  transform: translateZ(-10px) scale(6);
-
+  -webkit-transform: translateZ(-10px) scale(11);
+  transform: translateZ(-10px) scale(11);
+  font-size: .7em;
 }
 
 .parallax__word{
