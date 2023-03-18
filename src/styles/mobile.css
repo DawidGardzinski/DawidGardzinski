@@ -29,77 +29,39 @@
     transform: translateY(0%);
   }
 
-  .start__h1{
-    grid-column: 1/5;
-  }
-
-  .start__next-section-wrapper{
-    grid-column: 2/4;
-    grid-row: 2/3;
-  }
-
-  .about__header{
-    grid-column: 1/5;
-  }
-
-  .about__text{
-    grid-column: 1/5;
-  }
-
   .about__logo{
     display: none;
   }
 
+  .start{
+    grid-template-areas:
+    "h h h h"
+    ".  btn btn  . ";
+  }
+
+  .about{
+    grid-template-areas: 'content content content content';
+  }
+
   .experience-and-education{
-    grid-template-rows: auto auto auto;
-    height: 100%;
-  }
-
-  .experience{
-    grid-column: 1/5;
-  }
-
-  .education{
-    grid-column: 1/5;
-    grid-row: 2/3;
-  }
-
-  .certs{
-    grid-column: 1/5;
-    grid-row: 3/4;
+    grid-template-areas:
+    'experience experience experience experience '
+    'education education education education'
+    'certs certs certs certs';
   }
 
   .projects{
-    grid-template-rows: auto auto auto;
-  }
-
-  .projects__header{
-    grid-column: 1/5;
-  }
-
-  /* MAKE THIS MORE GENERIC */
-  .project--first{
-    grid-column: 1/5;
-    grid-row: 2/3;
-  }
-
-  .project--second{
-    grid-column: 1/5;
-    grid-row: 3/4;
+    grid-template-areas: 'header header header header'
+                       'project1 project1 project1 project1'
+                       ' project2 project2 project2 project2';
   }
 
   .project--third{
     display: none;
   }
-  /* -------------------- */
 
-  .faq{
-    grid-column: 1/5;
+  .footer{
+    grid-template-areas: 'faq faq faq faq'
+    'signature signature signature signature';
   }
-
-  .signature{
-    grid-row: 2/3;
-    grid-column: 1/5;
-  }
-
 }

@@ -6,6 +6,7 @@
   -webkit-perspective: 1px;
   perspective: 1px;
   z-index: -1;
+  filter: blur(1px);
 }
 
 .parallax__layer{
