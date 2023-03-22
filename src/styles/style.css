@@ -170,6 +170,7 @@ body{
   font-size: 64px;
   margin: 0;
   grid-area: h;
+  white-space: pre;
   min-height: 100px;
   display: flex;
   align-content: center;

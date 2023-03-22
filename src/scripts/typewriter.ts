@@ -1,37 +1,72 @@
-//This is made ad hoc, optimize it
-export const typewriter = (
-  elementToAnimate: HTMLElement | null,
-  textsToWrite: string[],
-  options: {
-    delay?: number;
-  } = { delay: 100 }
-) => {
-  const { delay } = options;
-  if (!elementToAnimate || !delay) return;
-  elementToAnimate.innerText = "";
+interface Typewriter {
+  (
+    elementToAnimate: HTMLElement | null,
+    textsToWrite: string[],
+    options?: {
+      forwardDelay?: number;
+      backwardDelay?: number;
+      transitionalDelay?: number;
+      leaveLastWord?: boolean;
+    }
+  ): void;
+}
 
-  const write = (texts: string[], index = 0, reverse = false, d = delay) => {
-    if (texts.length === 1 && reverse) return;
-    const text = texts[0];
-    const textLength = text.length;
-    setTimeout(() => {
-      if (index === -1) {
-        write(texts.slice(1, texts.length), 0, false);
-        return;
-      }
-      if (index > textLength) {
-        write(texts, index - 2, true, 5 * d);
-        return;
-      }
-      if (reverse) {
-        elementToAnimate.innerText = text.slice(0, index - textLength);
-        write(texts, index - 1, reverse);
-      } else {
-        elementToAnimate.innerText = text.slice(0, index);
-        write(texts, index + 1, reverse);
-      }
-    }, d);
+export const typewriter: Typewriter = (
+  elementToAnimate,
+  textsToWrite,
+  options = {}
+) => {
+  const defaultOptions = {
+    forwardDelay: 100,
+    backwardDelay: 75,
+    transitionalDelay: 200,
+    leaveLastWord: true,
   };
 
-  write(textsToWrite);
+  const newOptions: Required<Parameters<Typewriter>[2]> = {
+    ...defaultOptions,
+    ...options,
+  };
+
+  const { forwardDelay, backwardDelay, transitionalDelay, leaveLastWord } =
+    newOptions;
+  if (!elementToAnimate) return;
+  elementToAnimate.innerText = "";
+
+  (function write(words: string[]) {
+    if (!words.length) return;
+    let wasWritten = false;
+    let isLastWord = words.length === 1;
+    let writtedWord = "";
+
+    (function writeWord(word: string) {
+      setTimeout(
+        () => {
+          if (!word && !wasWritten) {
+            wasWritten = true;
+            if (leaveLastWord && isLastWord) return;
+            writeWord(writtedWord);
+            return;
+          }
+
+          if (!wasWritten) {
+            writtedWord += word[0];
+            elementToAnimate.innerText = writtedWord;
+            writeWord(word.slice(1));
+            return;
+          }
+
+          elementToAnimate.innerText = word;
+
+          if (!word && wasWritten) {
+            write(words.slice(1));
+            return;
+          }
+
+          writeWord(word.slice(0, -1));
+        },
+        wasWritten ? backwardDelay : word ? forwardDelay : transitionalDelay
+      );
+    })(words[0]);
+  })(textsToWrite);
 };
