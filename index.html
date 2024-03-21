@@ -1,56 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dawid Gardziński</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%C4%85%C4%87%C4%99%C5%82%C5%84%C3%B3%C5%9B%C5%BC%C5%BA" rel="stylesheet preload" as="style">
-    <meta name="description" content="Web developer portfolio">
-    <meta name="keywords" content="web, development, programmer, developer, backend, frontend">
-    <meta name="author" content="Dawid Gardziński">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%C4%85%C4%87%C4%99%C5%82%C5%84%C3%B3%C5%9B%C5%BC%C5%BA"
+      rel="stylesheet preload"
+      as="style"
+    />
+    <meta name="description" content="Web developer portfolio" />
+    <meta
+      name="keywords"
+      content="web, development, programmer, developer, backend, frontend"
+    />
+    <meta name="author" content="Dawid Gardziński" />
   </head>
   <body id="body">
     <header class="header">
       <div class="logo">
-        <img width="66" height="69" src="/src/icons/logo.svg" alt="logo">
+        <img width="66" height="69" src="/src/icons/logo.svg" alt="logo" />
         <div class="logo__text">
-          <div class="text text--xl">
-            Dawid Gardziński
-          </div>
-          <div class="text text--m text--color-tertiary">
-            Web developer
-          </div>
+          <div class="text text--xl">Dawid Gardziński</div>
+          <div class="text text--m text--color-tertiary">Web developer</div>
         </div>
       </div>
       <nav class="contact">
-        <a href="https://github.com/DawidGardzinski" target="_blank" aria-label="link to my github account">
-          <img class="icon icon--hide-on-mobile" src="/src/icons/github.svg" alt="github">
+        <a
+          href="https://github.com/DawidGardzinski"
+          target="_blank"
+          aria-label="link to my github account"
+        >
+          <img
+            class="icon icon--hide-on-mobile"
+            src="/src/icons/github.svg"
+            alt="github"
+          />
         </a>
-        <a href="https://www.linkedin.com/in/dawid-gardzi%C5%84ski-649978174/" target="_blank" aria-label="link to my linkedin account">
-          <img class="icon icon--hide-on-mobile" src="/src/icons/linkedin.svg" alt="linkedin">
+        <a
+          href="https://www.linkedin.com/in/gardzinski/"
+          target="_blank"
+          aria-label="link to my linkedin account"
+        >
+          <img
+            class="icon icon--hide-on-mobile"
+            src="/src/icons/linkedin.svg"
+            alt="linkedin"
+          />
         </a>
         <div class="nav">
-          <input id="hamburgerCheckbox" class="hamburger-checkbox" type="checkbox" >
-          <label tabindex="0" class="hamburger" for="hamburgerCheckbox" id="hamburgerCheckboxLabel">
+          <input
+            id="hamburgerCheckbox"
+            class="hamburger-checkbox"
+            type="checkbox"
+          />
+          <label
+            tabindex="0"
+            class="hamburger"
+            for="hamburgerCheckbox"
+            id="hamburgerCheckboxLabel"
+          >
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
           </label>
           <ul id="nav-list" class="nav-list">
             <li><a class="nav-list__item" href="#about">About me</a></li>
-            <li><a class="nav-list__item" href="#experience-and-education">Experience</a></li>
-            <li><a class="nav-list__item" href="#experience-and-education">Educations</a></li>
+            <li>
+              <a class="nav-list__item" href="#experience-and-education"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a class="nav-list__item" href="#experience-and-education"
+                >Educations</a
+              >
+            </li>
             <li><a class="nav-list__item" href="#projects">Projects</a></li>
             <li><a class="nav-list__item" href="#faq">FAQ</a></li>
             <li class="nav-list__item nav-list__socials">
-              <a href="https://github.com/DawidGardzinski" target="_blank" aria-label="link to my github account" >
-                <img class="icon" src="/src/icons/github.svg" alt="github">
+              <a
+                href="https://github.com/DawidGardzinski"
+                target="_blank"
+                aria-label="link to my github account"
+              >
+                <img class="icon" src="/src/icons/github.svg" alt="github" />
               </a>
-              <a href="https://www.linkedin.com/in/dawid-gardzi%C5%84ski-649978174/" target="_blank" aria-label="link to my linkedin account">
-                <img class="icon" src="/src/icons/linkedin.svg" alt="linkedin">
+              <a
+                href="https://www.linkedin.com/in/gardzinski/"
+                target="_blank"
+                aria-label="link to my linkedin account"
+              >
+                <img
+                  class="icon"
+                  src="/src/icons/linkedin.svg"
+                  alt="linkedin"
+                />
               </a>
             </li>
           </ul>
@@ -62,80 +110,143 @@
       <section class="start grid">
         <h1 id="typewriter" class="start__h1">Hi.</h1>
         <div class="start__next-section-wrapper">
-          <button id="startButton" class="start__next-section-button js-disabled">
-            <img class="icon" src="/src/icons/blueArrow.svg" alt="mail">
+          <button
+            id="startButton"
+            class="start__next-section-button js-disabled"
+          >
+            <img class="icon" src="/src/icons/blueArrow.svg" alt="mail" />
           </button>
         </div>
       </section>
       <div id="parallax" class="parallax">
-        <div class="parallax__layer parallax__layer--first">
-        </div>
-        <div class="parallax__layer parallax__layer--second">
-        </div>
-        <div class="parallax__layer parallax__layer--third">
-        </div>
-        <div class="parallax__layer parallax__layer--fourth">
-        </div>
+        <div class="parallax__layer parallax__layer--first"></div>
+        <div class="parallax__layer parallax__layer--second"></div>
+        <div class="parallax__layer parallax__layer--third"></div>
+        <div class="parallax__layer parallax__layer--fourth"></div>
       </div>
       <div class="background-gradient"></div>
       <section id="about" class="about grid">
         <div class="about__content">
           <h2 class="about__header">About me</h2>
-          <p class="about__text">I am a web developer who specializes in creating web applications. I have skills in both frontend design and development (HTML, CSS, TypeScript) as well as backend development (Node.js, PostgreSQL, MongoDB, Golang), allowing me to create comprehensive solutions for clients. I always prioritize the efficiency, usability, and scalability of projects, as well as constantly improving my skills. I have over 3 years of professional experience in programming and over 8 years of non-professional. </p>
+          <p class="about__text">
+            I am a web developer who specializes in creating web applications. I
+            have skills in both frontend design and development (HTML, CSS,
+            TypeScript) as well as backend development (Node.js, PostgreSQL,
+            MongoDB, Golang), allowing me to create comprehensive solutions for
+            clients. I always prioritize the efficiency, usability, and
+            scalability of projects, as well as constantly improving my skills.
+            I have over 3 years of professional experience in programming and
+            over 8 years of non-professional.
+          </p>
         </div>
         <div class="about__logo">
-          <img class="about__image" width="300" height="300" src="src/images/logo-big.svg" alt="logo" >
+          <img
+            class="about__image"
+            width="300"
+            height="300"
+            src="src/images/logo-big.svg"
+            alt="logo"
+          />
         </div>
       </section>
       <div class="background-gradient background-gradient--180deg"></div>
 
-      <section id="experience-and-education" class="experience-and-education grid">
+      <section
+        id="experience-and-education"
+        class="experience-and-education grid"
+      >
         <div class="experience">
           <h3 class="experience-and-education__header">Experience</h3>
           <ul class="experience-and-education__list">
-            <li class="experience-and-education__item experience-and-education__item--checked">Non-commercial
-              <div class="experience-and-education__item-date">2015 - </div>
+            <li
+              class="experience-and-education__item experience-and-education__item--checked"
+            >
+              Non-commercial
+              <div class="experience-and-education__item-date">2015 -</div>
             </li>
-            <li class="experience-and-education__item experience-and-education__item--checked">Wirtualna Polska
-              <div class="experience-and-education__item-date">2020 - </div>
+            <li
+              class="experience-and-education__item experience-and-education__item--checked"
+            >
+              Wirtualna Polska
+              <div class="experience-and-education__item-date">2020 -</div>
             </li>
-            <li class="experience-and-education__item">...<div class="experience-and-education__item-date">...</div></li>
+            <li class="experience-and-education__item">
+              ...
+              <div class="experience-and-education__item-date">...</div>
+            </li>
           </ul>
         </div>
         <div class="education">
           <h3 class="experience-and-education__header">Education</h3>
           <ul class="experience-and-education__list">
-            <li class="experience-and-education__item experience-and-education__item--checked">High school
-              <div class="experience-and-education__item-date">2016 - 2020 </div>
+            <li
+              class="experience-and-education__item experience-and-education__item--checked"
+            >
+              High school
+              <div class="experience-and-education__item-date">2016 - 2020</div>
             </li>
-            <li class="experience-and-education__item experience-and-education__item--checked">Warsaw School of Information Technology (WIT)
-              <div class="experience-and-education__item-date">2021 - </div>
+            <li
+              class="experience-and-education__item experience-and-education__item--checked"
+            >
+              Warsaw School of Information Technology (WIT)
+              <div class="experience-and-education__item-date">2021 -</div>
             </li>
-            <li class="experience-and-education__item">...<div class="experience-and-education__item-date">...</div></li>
+            <li class="experience-and-education__item">
+              ...
+              <div class="experience-and-education__item-date">...</div>
+            </li>
           </ul>
         </div>
         <div class="certs">
           <h3 class="experience-and-education__header">Certs</h3>
           <ul class="experience-and-education__list">
-            <li class="experience-and-education__item experience-and-education__item--checked">E12 - Montaż i eksploatacja komputerów osobistych oraz urządzeń peryferyjnych
-              <div class="experience-and-education__item-issuer">Okręgowa komisja egzaminacyjna w Warszawie</div>
+            <li
+              class="experience-and-education__item experience-and-education__item--checked"
+            >
+              E12 - Montaż i eksploatacja komputerów osobistych oraz urządzeń
+              peryferyjnych
+              <div class="experience-and-education__item-issuer">
+                Okręgowa komisja egzaminacyjna w Warszawie
+              </div>
             </li>
-            <li class="experience-and-education__item experience-and-education__item--checked">E13 - Projektowanie lokalnych sieci komputerowych i administrowanie sieciami
-              <div class="experience-and-education__item-issuer">Okręgowa komisja egzaminacyjna w Warszawie</div></li>
-            <li class="experience-and-education__item experience-and-education__item--checked">E14 - Tworzenie aplikacji internetowych i baz danych oraz administrowanie bazami
-              <div class="experience-and-education__item-issuer">Okręgowa komisja egzaminacyjna w Warszawie</div></li>
-            <li class="experience-and-education__item experience-and-education__item--checked">IT Technician
-              <div class="experience-and-education__item-issuer">Okręgowa komisja egzaminacyjna w Warszawie</div></li>
-            <li class="experience-and-education__item experience-and-education__item--checked">Database Administrator
-              <div class="experience-and-education__item-issuer">VCC</div></li>
+            <li
+              class="experience-and-education__item experience-and-education__item--checked"
+            >
+              E13 - Projektowanie lokalnych sieci komputerowych i
+              administrowanie sieciami
+              <div class="experience-and-education__item-issuer">
+                Okręgowa komisja egzaminacyjna w Warszawie
+              </div>
+            </li>
+            <li
+              class="experience-and-education__item experience-and-education__item--checked"
+            >
+              E14 - Tworzenie aplikacji internetowych i baz danych oraz
+              administrowanie bazami
+              <div class="experience-and-education__item-issuer">
+                Okręgowa komisja egzaminacyjna w Warszawie
+              </div>
+            </li>
+            <li
+              class="experience-and-education__item experience-and-education__item--checked"
+            >
+              IT Technician
+              <div class="experience-and-education__item-issuer">
+                Okręgowa komisja egzaminacyjna w Warszawie
+              </div>
+            </li>
+            <li
+              class="experience-and-education__item experience-and-education__item--checked"
+            >
+              Database Administrator
+              <div class="experience-and-education__item-issuer">VCC</div>
+            </li>
           </ul>
         </div>
       </section>
 
       <section id="projects" class="projects grid">
-        <h2 class="projects__header">
-          Projects
-        </h2>
+        <h2 class="projects__header">Projects</h2>
         <div class="project project--first"></div>
         <div class="project project--second"></div>
         <div class="project project--third"></div>
@@ -147,57 +258,120 @@
         <h2 class="faq__header">FAQ</h2>
         <ul class="faq-list">
           <li class="faq-list__item">
-            <input id="question1" class="faq-checkbox" type="checkbox" >
-            <label for="question1" class="faq__question">What tools did you use to create this website?
+            <input id="question1" class="faq-checkbox" type="checkbox" />
+            <label for="question1" class="faq__question"
+              >What tools did you use to create this website?
             </label>
-            <div class="faq__answer">This is a portfolio-type website, so using frameworks in this case would be overengineering. Specifically, apart from pure HTML and CSS, I used <a href="https://www.typescriptlang.org/">TypeScript</a> for writing the code. As for any external libraries working at runtime, I used <a href="https://lodash.com/">Lodash</a>. When it comes to development, I used <a href="https://vitejs.dev/">Vite</a> as a builder and <a href="https://www.npmjs.com/package/gh-pages">gh-pages</a> for deployment. It was also very important for me to make sure that the website is accessible for people with JavaScript disabled and with disabilities, so I made sure to create it that way. <br> <br>
-            Helpfull tools:
+            <div class="faq__answer">
+              This is a portfolio-type website, so using frameworks in this case
+              would be overengineering. Specifically, apart from pure HTML and
+              CSS, I used
+              <a href="https://www.typescriptlang.org/">TypeScript</a> for
+              writing the code. As for any external libraries working at
+              runtime, I used <a href="https://lodash.com/">Lodash</a>. When it
+              comes to development, I used
+              <a href="https://vitejs.dev/">Vite</a> as a builder and
+              <a href="https://www.npmjs.com/package/gh-pages">gh-pages</a> for
+              deployment. It was also very important for me to make sure that
+              the website is accessible for people with JavaScript disabled and
+              with disabilities, so I made sure to create it that way. <br />
+              <br />
+              Helpfull tools:
               <ul>
-                <li><a href="https://validator.w3.org/">validator.w3c</a> - to check HTML issues</li>
-                <li><a href="https://pagespeed.web.dev/">pagespeed.web</a> - to check site speed, core vitals etc. &#40;lab data&#41;</li>
-                <li><a href="https://www.w3.org/WAI/">w3 WAI</a> - to check the impact of decisions on accessibility</li>
-                <li><a href="https://developer.mozilla.org/en-US/">MDN</a> - best web documentation</li>
-                <li><a href="https://webaim.org/resources/contrastchecker/">contrast checker</a> - just as the name suggests</li>
+                <li>
+                  <a href="https://validator.w3.org/">validator.w3c</a> - to
+                  check HTML issues
+                </li>
+                <li>
+                  <a href="https://pagespeed.web.dev/">pagespeed.web</a> - to
+                  check site speed, core vitals etc. &#40;lab data&#41;
+                </li>
+                <li>
+                  <a href="https://www.w3.org/WAI/">w3 WAI</a> - to check the
+                  impact of decisions on accessibility
+                </li>
+                <li>
+                  <a href="https://developer.mozilla.org/en-US/">MDN</a> - best
+                  web documentation
+                </li>
+                <li>
+                  <a href="https://webaim.org/resources/contrastchecker/"
+                    >contrast checker</a
+                  >
+                  - just as the name suggests
+                </li>
               </ul>
             </div>
           </li>
           <li class="faq-list__item">
-            <input id="question2" class="faq-checkbox" type="checkbox" >
+            <input id="question2" class="faq-checkbox" type="checkbox" />
             <label for="question2" class="faq__question">
               How to make hamburger menu/parallax/typer?
             </label>
-            <div class="faq__answer">Check my simplified snippets and figure it out by yourself:
+            <div class="faq__answer">
+              Check my simplified snippets and figure it out by yourself:
               <ul>
-                <li><a href="https://codepen.io/dawidgardzinski/pen/QWVQKVq">parallax</a> - only css</li>
-                <li><a href="https://codepen.io/dawidgardzinski/pen/KKxemJQ">hamburger menu</a> - only css</li>
-                <li><a href="https://codepen.io/dawidgardzinski/pen/BaOVRbW">typer</a> - typescript</li>
-                <li><a href="https://codepen.io/dawidgardzinski/pen/abaQmjb">faq</a> - only css</li>
+                <li>
+                  <a href="https://codepen.io/dawidgardzinski/pen/QWVQKVq"
+                    >parallax</a
+                  >
+                  - only css
+                </li>
+                <li>
+                  <a href="https://codepen.io/dawidgardzinski/pen/KKxemJQ"
+                    >hamburger menu</a
+                  >
+                  - only css
+                </li>
+                <li>
+                  <a href="https://codepen.io/dawidgardzinski/pen/BaOVRbW"
+                    >typer</a
+                  >
+                  - typescript
+                </li>
+                <li>
+                  <a href="https://codepen.io/dawidgardzinski/pen/abaQmjb"
+                    >faq</a
+                  >
+                  - only css
+                </li>
               </ul>
             </div>
           </li>
           <li class="faq-list__item">
-            <input id="question3" class="faq-checkbox" type="checkbox" >
-            <label for="question3" class="faq__question">How can I get in touch with you?
+            <input id="question3" class="faq-checkbox" type="checkbox" />
+            <label for="question3" class="faq__question"
+              >How can I get in touch with you?
             </label>
-            <div class="faq__answer">Through <a href="https://www.linkedin.com/in/dawid-gardzi%C5%84ski-649978174/">LinkedIn</a> or mail <a href="mailto:dawid@gardzinski.dev">dawid@gardzinski.dev</a>.</div>
+            <div class="faq__answer">
+              Through
+              <a href="https://www.linkedin.com/in/gardzinski/">LinkedIn</a>.
+            </div>
           </li>
           <li class="faq-list__item">
-            <input id="question4" class="faq-checkbox" type="checkbox" >
-            <label for="question4" class="faq__question">Are you currently looking for a job?
+            <input id="question4" class="faq-checkbox" type="checkbox" />
+            <label for="question4" class="faq__question"
+              >Are you currently looking for a job?
             </label>
-            <div class="faq__answer">Not actively, but you can always reach out to me on <a href="https://www.linkedin.com/in/dawid-gardzi%C5%84ski-649978174/">LinkedIn</a>. Maybe we can work something out.</div>
+            <div class="faq__answer">
+              Not actively, but you can always reach out to me on
+              <a href="https://www.linkedin.com/in/gardzinski/">LinkedIn</a>.
+              Maybe we can work something out.
+            </div>
           </li>
           <li class="faq-list__item">
-            <input id="question5" class="faq-checkbox" type="checkbox" >
-            <label for="question5" class="faq__question">Where can I find more of your projects?
+            <input id="question5" class="faq-checkbox" type="checkbox" />
+            <label for="question5" class="faq__question"
+              >Where can I find more of your projects?
             </label>
-            <div class="faq__answer">Here on my <a href="https://github.com/DawidGardzinski">Github</a>.</div>
+            <div class="faq__answer">
+              Here on my
+              <a href="https://github.com/DawidGardzinski">Github</a>.
+            </div>
           </li>
         </ul>
       </section>
-      <div class="signature">
-        Dawid Gardziński &copy; 2023
-      </div>
+      <div class="signature">Dawid Gardziński &copy; 2024</div>
     </footer>
 
     <script type="module" src="/src/main.ts"></script>
